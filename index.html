@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Parking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                LOGO
+            </div>
+
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Estacionamiento</a>
+                <a href="#">Actividad</a>
+                <a href="#">Reportes</a>
+            </nav>
+
+            <div class="usuario">
+                Usuario
+            </div>
+
+        </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="contenido">
+
+            <!-- BARRA SUPERIOR -->
+            <header class="barra-superior">
+
+                <div>
+                    <span>H. ACT:</span>
+                    <strong id="hora">00:00</strong>
+                </div>
+
+                <div>
+                    <span>TOTAL:</span>
+                    <strong id="total">0</strong>
+                </div>
+
+                <div>
+                    <span>LIBRES:</span>
+                    <strong id="libres">0</strong>
+                </div>
+
+                <div>
+                    <span>OCUPADOS:</span>
+                    <strong id="ocupados">0</strong>
+                </div>
+
+            </header>
+
+
+            <!-- ZONA CENTRAL -->
+            <section class="zona-principal">
+
+                <div class="estacionamiento">
+
+                    <h2>Mapa de Estacionamiento</h2>
+
+                    <div class="plazas" id="plazas"></div>
+
+                </div>
+
+
+                <!-- PANEL DERECHO -->
+                <aside class="panel-derecho">
+
+                    <div class="grafico">
+
+                        <h3>Disponibilidad</h3>
+
+                        <canvas id="graficoDona"></canvas>
+
+                    </div>
+
+                    <div class="actividad">
+                        Actividad
+                    </div>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
